@@ -49,21 +49,26 @@
   <body>
     <!-- Header -->
     <header class="site-header" id="top">
-      <div class="header-inner">
+      <div class="header-inner sec-wrap">
         <a class="brand" href="#top" aria-label="Creative Design Studio home">
-          <img src="assets/images/Logo.svg" alt="Creative Design Studio" />
+          <img src="assets/images/logo.svg" alt="Creative Design Studio" />
         </a>
-        <nav class="desktop-nav" aria-label="Main navigation">
+        <nav class="desktop-nav fs16 fw-semi-bold" aria-label="Main navigation">
           <a href="#top">Top</a><a href="#about">About</a>
           <a href="#portfolio">Portfolio</a><a href="#blog">Blog</a>
           <a href="#faqs">FAQs</a>
-          <a class="button button-dark nav-contact" href="#contact">Contact</a>
+          <a class="button button-dark nav-contact fs14" href="#contact"
+            >Contact</a
+          >
         </nav>
         <a
           class="menu-link"
           href="#navigation"
           aria-label="Skip to page navigation"
         >
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
         <nav class="mobile-nav" id="navigation" aria-label="Main navigation">
           <a href="#top">Top</a>
@@ -80,82 +85,77 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <div class="hero-copy-inner">
-            <p class="eyebrow">Creative studio</p>
-            <h1 id="hero-title">
-              Great design is<br class="desktop-break" />
-              invisible
-            </h1>
-            <p class="hero-description">
-              We make thoughtful digital experiences that make a lasting
-              impression.
+            <h1 id="hero-title" class="mb25">Great design is invisible</h1>
+            <p class="hero-description mb25">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis, perferendis!
             </p>
-            <a class="button button-dark" href="#about">View More</a>
+            <a class="button button-dark fs14" href="#about">View More</a>
           </div>
         </div>
         <div class="hero-art">
           <img
-            src="assets/images/Hero.png"
+            src="assets/images/hero.png"
             alt="Illustration of creative technology and digital design"
           />
         </div>
       </section>
 
       <!-- Trust Session -->
-      <section
-        class="trust section-wrap"
-        id="about"
-        aria-labelledby="trust-title"
-      >
-        <div class="section-heading">
-          <p class="eyebrow">Good work, great partnerships</p>
-          <h2 id="trust-title">Why Our Clients Trust Us</h2>
-          <p>
-            We combine clear thinking, considered design, and dependable
-            delivery to make every project count.
-          </p>
-        </div>
-        <div class="trust-content">
-          <div class="trust-illustration">
-            <img
-              src="assets/images/TrustImage.png"
-              alt="Illustration representing trusted client partnerships"
-            />
+      <section class="trust" id="about" aria-labelledby="trust-title">
+        <div class="sec-wrap">
+          <div class="section-heading">
+            <h2 id="trust-title">Why Our Clients Trust Us</h2>
+            <p>
+              We combine clear thinking, considered design, and dependable
+              delivery to make every project count.
+            </p>
           </div>
-          <ul class="benefit-list">
-            <li>
-              <span class="check" aria-hidden="true">✓</span>
-              <span>
-                We listen carefully and shape the work around your goals.
-              </span>
-            </li>
-            <li>
-              <span class="check" aria-hidden="true">✓</span>
-              <span>
-                We keep every detail clear, useful, and easy to understand.
-              </span>
-            </li>
-            <li>
-              <span class="check" aria-hidden="true">✓</span>
-              <span>
-                We build consistent experiences for every screen and touchpoint.
-              </span>
-            </li>
-            <li>
-              <span class="check" aria-hidden="true">✓</span>
-              <span>
-                We work closely with you from the first idea to the final
-                launch.
-              </span>
-            </li>
-          </ul>
+          <div class="trust-content">
+            <div class="trust-illustration">
+              <img
+                src="assets/images/trustImage.png"
+                alt="Illustration representing trusted client partnerships"
+              />
+            </div>
+            <ul class="benefit-list">
+              <li>
+                <span class="check fs12" aria-hidden="true">✓</span>
+                <span>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
+                  ipsam doloremque?
+                </span>
+              </li>
+              <li>
+                <span class="check fs12" aria-hidden="true">✓</span>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, aliquid blanditiis.
+                </span>
+              </li>
+              <li>
+                <span class="check fs12" aria-hidden="true">✓</span>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos, quis laborum!
+                </span>
+              </li>
+              <li>
+                <span class="check fs12" aria-hidden="true">✓</span>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, minima! Facere?
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Blog Session -->
       <section class="blog section-tint" id="blog" aria-labelledby="blog-title">
-        <div class="section-wrap">
+        <div class="sec-wrap">
           <div class="section-heading">
-            <p class="eyebrow">Ideas and updates</p>
             <h2 id="blog-title">Latest Blog</h2>
           </div>
           <!-- Blog Cards -->
@@ -163,19 +163,19 @@
             <article class="blog-card">
               <a href="#contact" class="card-image">
                 <img
-                  src="assets/images/SampleCardImg.png"
+                  src="assets/images/sampleCardImg.png"
                   alt="Laptop, coffee, and notebook on a desk"
                 />
               </a>
               <div class="card-copy">
-                <h3>
+                <h3 class="fs16">
                   <a href="#contact">Humans are much more smarter than AI</a>
                 </h3>
-                <p>
+                <p class="fs13">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Expedita, tenetur?
                 </p>
-                <a class="text-link" href="#contact">
+                <a class="text-link fs12" href="#contact">
                   Learn more <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -184,19 +184,19 @@
             <article class="blog-card">
               <a href="#contact" class="card-image">
                 <img
-                  src="assets/images/SampleCardImg.png"
+                  src="assets/images/sampleCardImg.png"
                   alt="Laptop, coffee, and notebook on a desk"
                 />
               </a>
               <div class="card-copy">
-                <h3>
+                <h3 class="fs16">
                   <a href="#contact">Humans are much more smarter than AI</a>
                 </h3>
-                <p>
+                <p class="fs13">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Autem, inventore?
                 </p>
-                <a class="text-link" href="#contact">
+                <a class="text-link fs12" href="#contact">
                   Learn more <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -205,85 +205,80 @@
             <article class="blog-card">
               <a href="#contact" class="card-image">
                 <img
-                  src="assets/images/SampleCardImg.png"
+                  src="assets/images/sampleCardImg.png"
                   alt="Laptop, coffee, and notebook on a desk"
                 />
               </a>
-              <div class="card-copy">
+              <div class="card-copy fs16">
                 <h3>
                   <a href="#contact">Humans are much more smarter than AI</a>
                 </h3>
-                <p>
+                <p class="fs13">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Consequuntur, pariatur?
                 </p>
-                <a class="text-link" href="#contact">
+                <a class="text-link fs12" href="#contact">
                   Learn more <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
           </div>
           <div class="center-action">
-            <a class="button button-dark" href="#contact">View More</a>
+            <a class="button button-dark fs14" href="#contact">View More</a>
           </div>
         </div>
       </section>
 
       <!-- Testimonials Session -->
-      <section
-        class="testimonials section-wrap"
-        aria-labelledby="clients-title"
-      >
-        <div class="section-heading">
-          <p class="eyebrow">Kind words</p>
-          <h2 id="clients-title">Our Happy Clients</h2>
-        </div>
-        <div class="testimonial-row">
-          <span class="carousel-arrow" aria-hidden="true">
-            <i class="fa-solid fa-arrow-left"></i>
-          </span>
-          <article class="testimonial-card">
-            <p class="quote-mark" aria-hidden="true">“</p>
-            <blockquote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              consectetur nobis mollitia dignissimos illo quam, veniam quasi non
-              vel totam temporibus magni itaque repudiandae debitis expedita hic
-              commodi excepturi ipsum.
-            </blockquote>
-            <p class="client-name">Jacqueline Wright</p>
-            <p class="client-role">Customer</p>
-          </article>
-          <article class="testimonial-card">
-            <p class="quote-mark" aria-hidden="true">“</p>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-              illum corporis sint illo nihil sunt maiores labore, ducimus eum
-              quis a omnis? Inventore dolor nobis quisquam, at dolore
-              voluptatibus sit?
-            </blockquote>
-            <p class="client-name">Jacqueline Wright</p>
-            <p class="client-role">Customer</p>
-          </article>
-          <span class="carousel-arrow" aria-hidden="true">
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
+      <section class="testimonials" aria-labelledby="clients-title">
+        <div class="sec-wrap">
+          <div class="section-heading">
+            <h2 id="clients-title">Our Happy Clients</h2>
+          </div>
+          <div class="testimonial-row">
+            <span class="carousel-arrow fs14" aria-hidden="true">
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <article class="testimonial-card">
+              <blockquote class="fs13">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                consectetur nobis mollitia dignissimos illo quam, veniam quasi
+                non vel totam temporibus magni itaque repudiandae debitis
+                expedita hic commodi excepturi ipsum.
+              </blockquote>
+              <p class="client-name fs13 fw-semi-bold">Jacqueline Wright</p>
+              <p class="client-role fs11">Customer</p>
+            </article>
+            <article class="testimonial-card">
+              <blockquote class="fs13">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+                illum corporis sint illo nihil sunt maiores labore, ducimus eum
+                quis a omnis? Inventore dolor nobis quisquam, at dolore
+                voluptatibus sit?
+              </blockquote>
+              <p class="client-name fs13 fw-semi-bold">Jacqueline Wright</p>
+              <p class="client-role fs11">Customer</p>
+            </article>
+            <span class="carousel-arrow fs14" aria-hidden="true">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
         </div>
       </section>
 
       <!-- FAQ Session -->
       <section class="faq section-tint" id="faqs" aria-labelledby="faq-title">
-        <div class="section-wrap faq-layout">
+        <div class="sec-wrap faq-layout">
           <img
             class="faq-image"
-            src="assets/images/FAQ.png"
+            src="assets/images/faq.png"
             alt="Open FAQ book with a question mark"
           />
           <div class="faq-content">
-            <p class="eyebrow">Answers at a glance</p>
             <h2 id="faq-title">Frequently asked questions</h2>
             <details open>
               <summary>Lorem ipsum dolor sit amet consectetur.</summary>
-              <p>
+              <p class="fs13">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Possimus debitis incidunt ipsum assumenda, repellendus rerum?
               </p>
@@ -306,29 +301,30 @@
       </section>
 
       <!-- Contact Session -->
-      <section
-        class="contact section-wrap"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="contact-panel">
-          <div>
-            <h2 id="contact-title">Need more information?</h2>
-            <p>
-              Write your concern to us and our specialist will get back to you.
-            </p>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="sec-wrap">
+          <div class="contact-panel">
+            <div>
+              <h2 id="contact-title">Need more information?</h2>
+              <p>
+                Write your concern to us and our specialist will get back to
+                you.
+              </p>
+            </div>
+            <button class="button button-light fs14" type="button">
+              Contact Us
+            </button>
           </div>
-          <button class="button button-light" type="button">Contact Us</button>
         </div>
       </section>
     </main>
 
     <!-- Footer Session -->
     <footer class="site-footer">
-      <div class="footer-inner">
+      <div class="footer-inner sec-wrap">
         <div class="footer-brand">
           <a class="brand" href="#top" aria-label="Creative Design Studio home">
-            <img src="assets/images/Logo.svg" alt="Creative Design Studio" />
+            <img src="assets/images/logo.svg" alt="Creative Design Studio" />
           </a>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -336,27 +332,27 @@
           </p>
         </div>
         <div class="social">
-          <h2>Connect with us</h2>
+          <h2 class="pl5">Connect with us</h2>
           <ul aria-label="Social networks">
             <li>
-              <span role="img" aria-label="Facebook">
+              <a href="#" role="img" aria-label="Facebook">
                 <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-              </span>
+              </a>
             </li>
             <li>
-              <span role="img" aria-label="YouTube">
+              <a href="#" role="img" aria-label="YouTube">
                 <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-              </span>
+              </a>
             </li>
             <li>
-              <span role="img" aria-label="Instagram">
+              <a href="#" role="img" aria-label="Instagram">
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-              </span>
+              </a>
             </li>
             <li>
-              <span role="img" aria-label="X">
+              <a href="#" role="img" aria-label="X">
                 <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-              </span>
+              </a>
             </li>
           </ul>
         </div>

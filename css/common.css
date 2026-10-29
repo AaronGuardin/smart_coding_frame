@@ -9,18 +9,6 @@
 }
 
 :root {
-  --clr-neutral-100: #fff;
-  --clr-neutral-200: #efefef;
-  --clr-neutral-300: #eaeaea;
-  --clr-neutral-400: #ededff;
-  --clr-neutral-500: #edf5fc;
-  --clr-neutral-600: #ddefff;
-  --clr-neutral-700: #d0f0ee;
-  --clr-neutral-800: #999;
-  --clr-neutral-900: #333;
-  --clr-neutral-1000: #000;
-
-  --primary-bg-color: #f8f8f8;
   --primary-color: #262626;
   --secondary-color: #606060;
 
@@ -51,9 +39,12 @@ h1,
 h2,
 h3 {
   line-height: 1.4;
-  color: var(--clr-neutral-1000);
+  color: var(--primary-color);
   font-family: var(--font-secondary);
   font-weight: 600;
+}
+h2 {
+  font-size: clamp(25px, 2.6vw, 34px);
 }
 
 img {
