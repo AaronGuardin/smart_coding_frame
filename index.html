@@ -18,7 +18,7 @@
       content="Thoughtful design and digital experiences that help ambitious businesses connect with their customers and grow."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/Hero.png" />
+    <meta property="og:image" content="assets/images/hero.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -28,13 +28,17 @@
       name="twitter:description"
       content="Thoughtful design and digital experiences that help ambitious businesses connect with their customers and grow."
     />
-    <meta name="twitter:image" content="assets/images/Hero.png" />
-    <link rel="icon" href="assets/images/Logo.svg" type="image/svg+xml" />
+    <meta name="twitter:image" content="assets/images/hero.png" />
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -57,9 +61,9 @@
           <a href="#top">Top</a><a href="#about">About</a>
           <a href="#portfolio">Portfolio</a><a href="#blog">Blog</a>
           <a href="#faqs">FAQs</a>
-          <a class="button button-dark nav-contact fs14" href="#contact"
-            >Contact</a
-          >
+          <a class="button button-dark nav-contact fs14" href="#contact">
+            Contact
+          </a>
         </nav>
         <a
           class="menu-link"
@@ -81,7 +85,7 @@
 
     <!-- Main -->
     <main>
-      <!-- Hero Session -->
+      <!-- Hero Section -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <div class="hero-copy-inner">
@@ -101,14 +105,16 @@
         </div>
       </section>
 
-      <!-- Trust Session -->
+      <!-- Trust Section -->
       <section class="trust" id="about" aria-labelledby="trust-title">
         <div class="sec-wrap">
           <div class="section-heading">
             <h2 id="trust-title">Why Our Clients Trust Us</h2>
-            <p>
-              We combine clear thinking, considered design, and dependable
-              delivery to make every project count.
+            <p class="fs16">
+              Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor
+              sed. Suspendisse lobortis vitae quis vehicula pellentesque sit id.
+              Urna posuere consequat velit vulputate faucibus pretium arcu
+              accumsan sit. Vel venenatis sapien.
             </p>
           </div>
           <div class="trust-content">
@@ -120,29 +126,29 @@
             </div>
             <ul class="benefit-list">
               <li>
-                <span class="check fs12" aria-hidden="true">✓</span>
-                <span>
+                <span class="check fs16 sm-fs12" aria-hidden="true">✓</span>
+                <span class="fs22 fw-semi-bold sm-fs12">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   ipsam doloremque?
                 </span>
               </li>
               <li>
-                <span class="check fs12" aria-hidden="true">✓</span>
-                <span>
+                <span class="check fs16 sm-fs12" aria-hidden="true">✓</span>
+                <span class="fs22 fw-semi-bold sm-fs12">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Delectus, aliquid blanditiis.
                 </span>
               </li>
               <li>
-                <span class="check fs12" aria-hidden="true">✓</span>
-                <span>
+                <span class="check fs16 sm-fs12" aria-hidden="true">✓</span>
+                <span class="fs22 fw-semi-bold sm-fs12">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, quis laborum!
                 </span>
               </li>
               <li>
-                <span class="check fs12" aria-hidden="true">✓</span>
-                <span>
+                <span class="check fs16 sm-fs12" aria-hidden="true">✓</span>
+                <span class="fs22 fw-semi-bold sm-fs12">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid, minima! Facere?
                 </span>
@@ -152,7 +158,7 @@
         </div>
       </section>
 
-      <!-- Blog Session -->
+      <!-- Blog Section -->
       <section class="blog section-tint" id="blog" aria-labelledby="blog-title">
         <div class="sec-wrap">
           <div class="section-heading">
@@ -229,44 +235,66 @@
         </div>
       </section>
 
-      <!-- Testimonials Session -->
+      <!-- Testimonials Section -->
       <section class="testimonials" aria-labelledby="clients-title">
         <div class="sec-wrap">
           <div class="section-heading">
             <h2 id="clients-title">Our Happy Clients</h2>
           </div>
           <div class="testimonial-row">
-            <span class="carousel-arrow fs14" aria-hidden="true">
-              <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            <article class="testimonial-card">
-              <blockquote class="fs13">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                consectetur nobis mollitia dignissimos illo quam, veniam quasi
-                non vel totam temporibus magni itaque repudiandae debitis
-                expedita hic commodi excepturi ipsum.
-              </blockquote>
-              <p class="client-name fs13 fw-semi-bold">Jacqueline Wright</p>
-              <p class="client-role fs11">Customer</p>
-            </article>
-            <article class="testimonial-card">
-              <blockquote class="fs13">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-                illum corporis sint illo nihil sunt maiores labore, ducimus eum
-                quis a omnis? Inventore dolor nobis quisquam, at dolore
-                voluptatibus sit?
-              </blockquote>
-              <p class="client-name fs13 fw-semi-bold">Jacqueline Wright</p>
-              <p class="client-role fs11">Customer</p>
-            </article>
-            <span class="carousel-arrow fs14" aria-hidden="true">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
+            <button
+              class="carousel-arrow testimonial-prev fs14"
+              type="button"
+              aria-label="Previous testimonial"
+            >
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <div class="testimonial-swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="testimonial-card swiper-slide">
+                  <blockquote class="fs13">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias consectetur nobis mollitia dignissimos illo quam,
+                    veniam quasi non vel totam temporibus magni itaque
+                    repudiandae debitis expedita hic commodi excepturi ipsum.
+                  </blockquote>
+                  <p class="client-name fs13 fw-semi-bold">Jacqueline Wright</p>
+                  <p class="client-role fs11">Customer</p>
+                </article>
+                <article class="testimonial-card swiper-slide">
+                  <blockquote class="fs13">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Amet illum corporis sint illo nihil sunt maiores labore,
+                    ducimus eum quis a omnis? Inventore dolor nobis quisquam, at
+                    dolore voluptatibus sit?
+                  </blockquote>
+                  <p class="client-name fs13 fw-semi-bold">Marcus Bennett</p>
+                  <p class="client-role fs11">Business owner</p>
+                </article>
+                <article class="testimonial-card swiper-slide">
+                  <blockquote class="fs13">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. The
+                    team made the whole process clear, collaborative, and
+                    enjoyable, and the finished site has made a real difference
+                    for our customers.
+                  </blockquote>
+                  <p class="client-name fs13 fw-semi-bold">Sofia Martinez</p>
+                  <p class="client-role fs11">Marketing director</p>
+                </article>
+              </div>
+            </div>
+            <button
+              class="carousel-arrow testimonial-next fs14"
+              type="button"
+              aria-label="Next testimonial"
+            >
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
       </section>
 
-      <!-- FAQ Session -->
+      <!-- FAQ Section -->
       <section class="faq section-tint" id="faqs" aria-labelledby="faq-title">
         <div class="sec-wrap faq-layout">
           <img
@@ -300,7 +328,7 @@
         </div>
       </section>
 
-      <!-- Contact Session -->
+      <!-- Contact Section -->
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="sec-wrap">
           <div class="contact-panel">
@@ -319,7 +347,7 @@
       </section>
     </main>
 
-    <!-- Footer Session -->
+    <!-- Footer Section -->
     <footer class="site-footer">
       <div class="footer-inner sec-wrap">
         <div class="footer-brand">
@@ -358,5 +386,22 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 22,
+        loop: true,
+        navigation: {
+          nextEl: ".testimonial-next",
+          prevEl: ".testimonial-prev",
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

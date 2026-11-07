@@ -68,6 +68,10 @@ a:hover {
   font-size: 16px;
 }
 
+.fs22 {
+  font-size: 22px;
+}
+
 .mb25 {
   margin-bottom: 25px;
 }
@@ -78,4 +82,64 @@ a:hover {
 
 .fw-semi-bold {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sm-fs10 {
+    font-size: 10px;
+  }
+  .sm-fs11 {
+    font-size: 11px;
+  }
+  .sm-fs12 {
+    font-size: 12px;
+  }
+  .sm-fs13 {
+    font-size: 13px;
+  }
+  .sm-fs14 {
+    font-size: 14px;
+  }
+  .sm-fs16 {
+    font-size: 16px;
+  }
+  .sm-fs18 {
+    font-size: 18px;
+  }
+  .sm-fs20 {
+    font-size: 20px;
+  }
+  .sm-fs22 {
+    font-size: 22px;
+  }
+  .sm-fs24 {
+    font-size: 24px;
+  }
+  .sm-fs28 {
+    font-size: 28px;
+  }
+  .sm-fs32 {
+    font-size: 32px;
+  }
+  .sm-fs34 {
+    font-size: 34px;
+  }
+  .sm-fs36 {
+    font-size: 36px;
+  }
+  .sm-fs42 {
+    font-size: 42px;
+  }
+  .sm-fs46 {
+    font-size: 46px;
+  }
+  .sm-fs48 {
+    font-size: 48px;
+  }
+  .sm-fs56 {
+    font-size: 56px;
+  }
+  .sm-fs64 {
+    font-size: 64px;
+  }
 }
